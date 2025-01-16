@@ -35,7 +35,7 @@
         <h3><b>Saisie des enfants expos&eacute;s</b></h3>
 
         <div class="line"></div>
-        <form:form action="" commandName="findPregnantPatientForm" id="form" method="get" >
+        <form:form action="" modelAttribute="findPregnantPatientForm" id="form" method="get" >
             <table cellspacing="0" cellpadding="5">
                 <tr>
 
@@ -111,7 +111,7 @@
     <div class="box">
         <h3><b>Saisie des enfants expos&eacute;s</b></h3>
         <div class="line"></div>
-        <form:form action="" commandName="childForm" id="form" method="post" >
+        <form:form action="" modelAttribute="childForm" id="form" method="post" >
             <form:hidden path="childId"/>
             <form:hidden path="motherPatientId"/>
             <form:hidden path="motherAge"/>

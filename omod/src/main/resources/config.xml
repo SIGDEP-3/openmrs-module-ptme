@@ -19,11 +19,6 @@
 	<!-- Module Activator -->
 	<activator>${project.parent.groupId}.${project.parent.artifactId}.PreventTransmissionActivator</activator>
 
-	<require_modules>
-		<require_module version="2.13">org.openmrs.module.webservices.rest</require_module>
-	</require_modules>
-
-
 	<!-- Adds link to admin page -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
@@ -37,6 +32,15 @@
 		</class>
 	</extension>
 
+	<require_modules>
+		<require_module version="2.47.0">
+			org.openmrs.module.webservices.rest
+		</require_module>
+		<require_module version="1.22.0-SNAPSHOT">
+			org.openmrs.module.legacyui
+		</require_module>
+	</require_modules>
+	
 	<!-- Privileges  -->
 	<privilege>
 		<name>Manage PTME</name>
@@ -104,4 +108,3 @@
 	</globalProperty>
 	<!-- /Global Properties -->
 </module>
-

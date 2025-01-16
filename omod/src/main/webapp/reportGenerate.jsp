@@ -91,7 +91,7 @@
         <h3><b>Rapports</b></h3>
 
         <div class="line"></div>
-        <form:form action="" commandName="getRunReportFormForm" id="form" method="get" >
+        <form:form action="" modelAttribute="getRunReportFormForm" id="form" method="get" >
             <table cellspacing="0" cellpadding="5">
                 <tr>
                     <td><input type="submit" value="Nouveau Rapport" name="add"></td>
@@ -190,7 +190,7 @@
     <div class="box">
         <h3><b>Saisie des informations du rapport</b></h3>
         <div class="line"></div>
-        <form:form action="" commandName="runReportForm" id="form" method="post">
+        <form:form action="" modelAttribute="runReportForm" id="form" method="post">
             <form:hidden path="generationId"/>
             <form:hidden path="generationDate"/>
             <form:hidden path="saved"/>

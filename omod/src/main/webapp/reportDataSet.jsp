@@ -108,7 +108,7 @@
     <h3><b>Ensembles de donn&eacute;es</b></h3>
 
     <div class="line"></div>
-    <form:form action="" commandName="getDataSetFromFrom" id="form" method="get" >
+    <form:form action="" modelAttribute="getDataSetFromFrom" id="form" method="get" >
         <table cellspacing="0" cellpadding="5">
             <tr>
                 <td><input type="submit" value="Nouveau" name="add"></td>
@@ -178,7 +178,7 @@
     <div class="box">
         <h3><b>Saisie des ensembles de donn&eacute;es</b></h3>
         <div class="line"></div>
-        <form:form action="" commandName="datasetForm" id="form" method="post" >
+        <form:form action="" modelAttribute="datasetForm" id="form" method="post" >
             <form:hidden path="datasetId"/>
             <table cellspacing="0" cellpadding="5" align="">
                 <tr>

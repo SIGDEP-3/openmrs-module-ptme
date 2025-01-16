@@ -33,7 +33,7 @@
         <h3><b>Gestion des templates</b></h3>
 
         <div class="line"></div>
-        <form:form action="" commandName="getTemplateFromFrom" id="form" method="get" >
+        <form:form action="" modelAttribute="getTemplateFromFrom" id="form" method="get" >
             <table cellspacing="0" cellpadding="5">
                 <tr>
                     <td><input type="submit" value="Nouveau" name="add"></td>
@@ -91,7 +91,7 @@
     <div class="box">
         <h3><b>Saisie des templates</b></h3>
         <div class="line"></div>
-        <form:form action="" commandName="templateForm" id="form" method="post" enctype="multipart/form-data" >
+        <form:form action="" modelAttribute="templateForm" id="form" method="post" enctype="multipart/form-data" >
             <form:hidden path="templateId"/>
             <table cellspacing="0" cellpadding="5" align="" width="70%">
                 <tr>

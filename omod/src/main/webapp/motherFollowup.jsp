@@ -47,7 +47,7 @@
     <div class="box">
         <h3>Choix de la patiente</h3>
         <div class="line"></div>
-        <form:form action="" commandName="findPregnantPatientForm" id="form" method="get" >
+        <form:form action="" modelAttribute="findPregnantPatientForm" id="form" method="get" >
             <form:hidden path="mode"/>
             <table cellpadding="10" cellspacing="0">
                 <tr>
@@ -136,7 +136,7 @@
         <c:set var = "visitHeight" value = "${30}"/>
         <c:set var = "firstColHeight" value = "${410}"/>
 
-        <form:form action="" commandName="motherFollowupForm" id="form" method="post" >
+        <form:form action="" modelAttribute="motherFollowupForm" id="form" method="post" >
 
             <form:hidden path="motherFollowupId"/>
             <form:hidden path="pregnantPatientId"/>
