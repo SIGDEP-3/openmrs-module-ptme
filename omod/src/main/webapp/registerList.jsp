@@ -155,7 +155,7 @@
         </b>
         <div class="line"></div>
         <c:set var = "disabled" value = "${ consultationForm.patientId != null ? false : false }"/>
-        <form:form commandName="consultationForm" method="post" action="${pageContext.request.contextPath}/module/ptme/registerList.form?register=${register}" id="form">
+        <form:form modelAttribute="consultationForm" method="post" action="${pageContext.request.contextPath}/module/ptme/registerList.form?register=${register}" id="form">
             <form:hidden path="consultationId"/>
             <form:hidden path="pregnantPatientId"/>
             <form:hidden path="patientId"/>

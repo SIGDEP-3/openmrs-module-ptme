@@ -49,7 +49,7 @@
 
         <h3><b>Choix de l'enfant</b></h3>
         <div class="line"></div>
-        <form:form action="" commandName="findChildForm" id="form" method="get" >
+        <form:form action="" modelAttribute="findChildForm" id="form" method="get" >
             <form:hidden path="mode"/>
             <table cellpadding="10" cellspacing="0">
                 <tr>
@@ -190,7 +190,7 @@
         <c:set var = "visitHeight" value = "${30}"/>
         <c:set var = "firstColHeight" value = "${310}"/>
 
-        <form:form action="" commandName="childFollowupForm" id="form" method="post" >
+        <form:form action="" modelAttribute="childFollowupForm" id="form" method="post" >
 
             <form:hidden path="childFollowupId"/>
             <form:hidden path="childFollowupVisitId"/>

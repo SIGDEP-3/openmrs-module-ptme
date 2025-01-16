@@ -58,7 +58,7 @@
         <h3><b>Gestion des indicateurs</b></h3>
 
         <div class="line"></div>
-        <form:form action="" commandName="getIndicatorFromFrom" id="form" method="get" >
+        <form:form action="" modelAttribute="getIndicatorFromFrom" id="form" method="get" >
             <table cellspacing="0" cellpadding="5">
                 <tr>
                     <td><input type="submit" value="Nouveau" name="add"></td>
@@ -128,7 +128,7 @@
     <div class="box">
         <h3><b>Saisie des indicateurs</b></h3>
         <div class="line"></div>
-        <form:form action="" commandName="indicatorForm" id="form" method="post" >
+        <form:form action="" modelAttribute="indicatorForm" id="form" method="post" >
             <form:hidden path="indicatorId"/>
             <table cellspacing="0" cellpadding="5" align="" width="70%">
                 <tr>
